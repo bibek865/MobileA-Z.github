@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile A-Z</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#111;
+            color:white;
+            padding:15px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        header h1{
+            font-size:24px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            font-size:16px;
+        }
+
+        nav a:hover{
+            color:#00bcd4;
+        }
+
+        .hero{
+            background:linear-gradient(to right, #000428, #004e92);
+            color:white;
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .hero h2{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:18px;
+        }
+
+        .section{
+            padding:60px 50px;
+            text-align:center;
+        }
+
+        .section h2{
+            margin-bottom:30px;
+            font-size:28px;
+        }
+
+        .mobile-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .card h3{
+            margin:15px 0;
+        }
+
+        .contact{
+            background:#222;
+            color:white;
+            padding:50px;
+        }
+
+        .contact p{
+            margin:10px 0;
+        }
+
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+            }
+
+            nav{
+                margin-top:10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mobile A-Z</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#mobiles">Mobiles</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Your Ultimate Mobile Guide</h2>
+    <p>Explore smartphones from A to Z — Reviews, Specs & Latest Updates</p>
+</section>
+
+<section class="section" id="about">
+    <h2>About Mobile A-Z</h2>
+    <p>Mobile A-Z is your one-stop destination for exploring all smartphone brands and models. 
+    We provide complete details, features, and comparisons to help you choose the best mobile phone.</p>
+</section>
+
+<section class="section" id="mobiles">
+    <h2>Popular Brands</h2>
+
+    <div class="mobile-grid">
+        <div class="card">
+            <img src="./gsmarena_019.webp" alt="Apple">
+            <h3>Apple</h3>
+            <p>Iphone 17 Pro Max</p>
+        </div>
+
+        <div class="card">
+            <img src="./samsungs25.jpg" alt="Samsung">
+            <h3>Samsung</h3>
+            <p>Galaxy S25 Ultra</p>
+        </div>
+
+        <div class="card">
+            <img src="./OnePlus-13T-Gray.webp" alt="OnePlus">
+            <h3>OnePlus</h3>
+            <p>OnePlus 13T</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@mobileaz.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: Tripura</p>
+</section>
+
+<footer>
+    <p>© 2026 Mobile A-Z | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
